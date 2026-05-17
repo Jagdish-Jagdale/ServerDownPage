@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme {
+  --color-accent: #f97316;
+  --color-accent-hover: #ea580c;
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Poppins', sans-serif;
+}
+
+@layer base {
+  :root {
+    --text-main: #ffffff;
+    --text-secondary: rgba(255, 255, 255, 0.7);
+    --glass-bg: rgba(0, 0, 0, 0.4);
+    --glass-border: rgba(255, 255, 255, 0.1);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    background-color: #0c0c0e;
+    color: var(--text-main);
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@keyframes rotateBorder {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes floatParticle {
+  0% { transform: translate(0, 0); opacity: 0; }
+  50% { opacity: 0.5; }
+  100% { transform: translate(100px, -100px); opacity: 0; }
+}
+
+.animate-rotate-border {
+  animation: rotateBorder 4s linear infinite;
+}
+
+.animate-breathe {
+  animation: breathe 4s infinite ease-in-out;
+}
+
+.animate-fade-in {
+  animation: fadeIn 1.2s ease-out forwards;
+}
+
+.particle {
+  position: absolute;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 70%);
+  border-radius: 50%;
+  animation: floatParticle 15s infinite linear;
+}
