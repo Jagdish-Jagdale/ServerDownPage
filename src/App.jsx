@@ -18,9 +18,9 @@ const App = () => {
 
   return (
     <div className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-[#0c0c0e] text-white">
-      {/* Background Image Container */}
+      {/* Background Image Containerjk */}
       <div className="fixed inset-0 z-0">
-        <div 
+        <div
           className="w-full h-full bg-cover bg-center filter brightness-[0.7]"
           style={{ backgroundImage: "url('https://res.cloudinary.com/dnhju6mhg/image/upload/f_auto,q_auto/webp/office-spaces/office-spaces-90.webp')" }}
         />
@@ -49,9 +49,9 @@ const App = () => {
       <div className="relative z-10 w-full max-w-[900px] px-6 py-12 text-center animate-fade-in mx-auto">
         <div className="mb-8 md:mb-12 inline-block">
           <div className="relative p-1 md:p-2 rounded-full bg-[conic-gradient(from_0deg,#ff4500,#feb47b,#ff7e5f,#764ba2,#667eea,#ff4500)] animate-rotate-border animate-breathe shadow-[0_0_30px_rgba(249,115,22,0.3)]">
-            <img 
-              src="https://tse4.mm.bing.net/th/id/OIP.2Kzep2ugJ1ZxC1jRL6CxvgAAAA?pid=Api&P=0&h=180" 
-              alt="Infoyashonand Technology" 
+            <img
+              src="https://tse4.mm.bing.net/th/id/OIP.2Kzep2ugJ1ZxC1jRL6CxvgAAAA?pid=Api&P=0&h=180"
+              alt="Infoyashonand Technology"
               className="h-[70px] w-[70px] md:h-[110px] md:w-[110px] rounded-full object-contain bg-white border-2 md:border-4 border-black block rotate-0 scale-100 transform-none"
               style={{ animation: 'none' }}
             />
