@@ -18,7 +18,7 @@ const App = () => {
 
   return (
     <div className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-[#0c0c0e] text-white">
-      {/* Background Image Containerjk */}
+      {/* Background Image Container */}
       <div className="fixed inset-0 z-0">
         <div
           className="w-full h-full bg-cover bg-center filter brightness-[0.7]"
