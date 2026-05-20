@@ -12,20 +12,20 @@ const ServerError = ({ imageUrl, onRetry, onGoHome }) => {
         <div className="w-full md:w-1/2 flex justify-center">
           <div className="relative group">
             <div className="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
-            <img 
-              src={imageUrl} 
-              alt="Server Error Illustration" 
+            <img
+              src={imageUrl}
+              alt="Server Error Illustration"
               className="relative rounded-2xl w-full max-w-[400px] h-auto object-cover shadow-2xl transform transition-transform duration-500 group-hover:scale-[1.02]"
             />
           </div>
         </div>
 
-        {/* Content Container */}
+        {/* Content Containerdd */}
         <div className="w-full md:w-1/2 text-center md:text-left space-y-6">
           <div className="inline-block px-4 py-1.5 rounded-full bg-red-500/10 border border-red-500/20 text-red-400 text-sm font-semibold tracking-wider uppercase mb-2">
             Status Code: 500
           </div>
-          
+
           <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight">
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-white to-white/70">Internal</span>
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-500">Server Error</span>
@@ -36,13 +36,13 @@ const ServerError = ({ imageUrl, onRetry, onGoHome }) => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center md:justify-start">
-            <button 
+            <button
               onClick={onRetry || (() => window.location.reload())}
               className="px-8 py-4 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-xl transition-all duration-300 transform hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(79,70,229,0.4)] active:scale-95"
             >
               Retry Connection
             </button>
-            <button 
+            <button
               onClick={onGoHome || (() => window.location.href = '/')}
               className="px-8 py-4 bg-slate-800 hover:bg-slate-700 text-white font-bold rounded-xl transition-all duration-300 transform hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(30,41,59,0.4)] border border-slate-700 active:scale-95"
             >
