@@ -20,7 +20,7 @@ const ServerError = ({ imageUrl, onRetry, onGoHome }) => {
           </div>
         </div>
 
-        {/* Content Containerdd */}
+        {/* Content Container */}
         <div className="w-full md:w-1/2 text-center md:text-left space-y-6">
           <div className="inline-block px-4 py-1.5 rounded-full bg-red-500/10 border border-red-500/20 text-red-400 text-sm font-semibold tracking-wider uppercase mb-2">
             Status Code: 500
